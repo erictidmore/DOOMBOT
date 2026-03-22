@@ -1,0 +1,41 @@
+# Secrets — NEVER commit
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+credentials.*
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Database
+memory.db
+*.db-wal
+*.db-shm
+
+# Runtime
+logs/
+audio/
+*.lock
+*.pid
+
+# Bot working directories
+projects/
+war_room/
+
+# PWA assets (not used)
+manifest.json
+icon-*.png
+
+# Scripts dir (generated)
+scripts/
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store

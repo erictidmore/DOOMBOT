@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 550" fill="none">
+  <!-- Browser window -->
+  <rect width="900" height="550" rx="10" fill="#0a0a0c"/>
+  <rect width="900" height="36" rx="10" fill="#1a1b21"/>
+  <rect y="26" width="900" height="10" fill="#1a1b21"/>
+  <circle cx="18" cy="18" r="6" fill="#ff5f57"/>
+  <circle cx="38" cy="18" r="6" fill="#febc2e"/>
+  <circle cx="58" cy="18" r="6" fill="#28c840"/>
+  <rect x="200" y="8" width="500" height="20" rx="4" fill="#0e0f12" stroke="#2a2c36" stroke-width="1"/>
+  <text x="450" y="22" text-anchor="middle" font-family="monospace" font-size="10" fill="#6b6e7a">localhost:5050/desktop</text>
+
+  <!-- Header -->
+  <rect x="0" y="36" width="900" height="50" fill="#0e0f12"/>
+  <circle cx="40" cy="61" r="5" fill="#00e676"/>
+  <text x="55" y="66" font-family="monospace" font-size="14" fill="#00e676" font-weight="bold" letter-spacing="3">DOOM WAR ROOM</text>
+  <text x="750" y="66" font-family="monospace" font-size="11" fill="#6b6e7a">SESSION CXVII</text>
+  <line x1="0" y1="86" x2="900" y2="86" stroke="#2a2c36" stroke-width="1"/>
+
+  <!-- Stats bar -->
+  <rect x="0" y="86" width="900" height="45" fill="#0e0f12"/>
+  <text x="110" y="106" text-anchor="middle" font-family="monospace" font-size="18" fill="#00e676" font-weight="bold">4</text>
+  <text x="110" y="122" text-anchor="middle" font-family="monospace" font-size="8" fill="#6b6e7a" letter-spacing="1">BOTS</text>
+  <text x="280" y="106" text-anchor="middle" font-family="monospace" font-size="18" fill="#c8cad0" font-weight="bold">12</text>
+  <text x="280" y="122" text-anchor="middle" font-family="monospace" font-size="8" fill="#6b6e7a" letter-spacing="1">DECREES</text>
+  <text x="450" y="106" text-anchor="middle" font-family="monospace" font-size="18" fill="#69f0ae" font-weight="bold">8</text>
+  <text x="450" y="122" text-anchor="middle" font-family="monospace" font-size="8" fill="#6b6e7a" letter-spacing="1">FULFILLED</text>
+  <text x="620" y="106" text-anchor="middle" font-family="monospace" font-size="18" fill="#ffd740" font-weight="bold">117</text>
+  <text x="620" y="122" text-anchor="middle" font-family="monospace" font-size="8" fill="#6b6e7a" letter-spacing="1">ARCHIVES</text>
+  <text x="790" y="106" text-anchor="middle" font-family="monospace" font-size="14" fill="#00e676">14:23:07</text>
+  <text x="790" y="122" text-anchor="middle" font-family="monospace" font-size="8" fill="#6b6e7a" letter-spacing="1">UPTIME</text>
+  <line x1="0" y1="131" x2="900" y2="131" stroke="#2a2c36" stroke-width="1"/>
+
+  <!-- Left column: Agents -->
+  <rect x="15" y="142" width="280" height="180" rx="6" fill="#131418" stroke="#2a2c36" stroke-width="1"/>
+  <text x="30" y="162" font-family="monospace" font-size="11" fill="#00e676" font-weight="bold" letter-spacing="2">ACTIVE AGENTS</text>
+
+  <!-- Bot rows -->
+  <rect x="25" y="175" width="260" height="32" rx="3" fill="#0e0f12"/>
+  <circle cx="40" cy="191" r="4" fill="#00e676"/>
+  <text x="52" y="188" font-family="monospace" font-size="10" fill="#69f0ae">DOOM-BOT-XII</text>
+  <text x="52" y="200" font-family="monospace" font-size="8" fill="#6b6e7a">dc-f7a2: Build scanner API</text>
+  <rect x="230" y="183" width="45" height="14" rx="2" fill="rgba(0,230,118,0.15)"/>
+  <text x="252" y="193" text-anchor="middle" font-family="monospace" font-size="8" fill="#00e676">ACTIVE</text>
+
+  <rect x="25" y="212" width="260" height="32" rx="3" fill="#0e0f12"/>
+  <circle cx="40" cy="228" r="4" fill="#00e676"/>
+  <text x="52" y="225" font-family="monospace" font-size="10" fill="#69f0ae">DOOM-BOT-XIII</text>
+  <text x="52" y="237" font-family="monospace" font-size="8" fill="#6b6e7a">dc-a3b4: Design UI layout</text>
+  <rect x="230" y="220" width="45" height="14" rx="2" fill="rgba(0,230,118,0.15)"/>
+  <text x="252" y="230" text-anchor="middle" font-family="monospace" font-size="8" fill="#00e676">ACTIVE</text>
+
+  <rect x="25" y="249" width="260" height="32" rx="3" fill="#0e0f12"/>
+  <circle cx="40" cy="265" r="4" fill="#ffd740"/>
+  <text x="52" y="262" font-family="monospace" font-size="10" fill="#c8cad0">DOOM-BOT-XIV</text>
+  <text x="52" y="274" font-family="monospace" font-size="8" fill="#6b6e7a">dc-c5d6: Wire endpoints</text>
+  <rect x="224" y="257" width="55" height="14" rx="2" fill="rgba(255,215,64,0.15)"/>
+  <text x="252" y="267" text-anchor="middle" font-family="monospace" font-size="8" fill="#ffd740">BLOCKED</text>
+
+  <rect x="25" y="286" width="260" height="32" rx="3" fill="#0e0f12"/>
+  <circle cx="40" cy="302" r="4" fill="#6b6e7a"/>
+  <text x="52" y="299" font-family="monospace" font-size="10" fill="#6b6e7a">DOOM-BOT-XI</text>
+  <text x="52" y="311" font-family="monospace" font-size="8" fill="#6b6e7a">dc-e7f8: Schema design</text>
+  <rect x="220" y="294" width="60" height="14" rx="2" fill="rgba(107,110,122,0.15)"/>
+  <text x="250" y="304" text-anchor="middle" font-family="monospace" font-size="8" fill="#6b6e7a">RETIRED</text>
+
+  <!-- Middle column: Decrees -->
+  <rect x="310" y="142" width="280" height="180" rx="6" fill="#131418" stroke="#2a2c36" stroke-width="1"/>
+  <text x="325" y="162" font-family="monospace" font-size="11" fill="#ffd740" font-weight="bold" letter-spacing="2">DECREE QUEUE</text>
+
+  <rect x="320" y="175" width="260" height="24" rx="2" fill="#0e0f12"/>
+  <text x="330" y="191" font-family="monospace" font-size="9" fill="#ff1744">P1</text>
+  <text x="350" y="191" font-family="monospace" font-size="9" fill="#c8cad0">dc-f7a2: Build scanner API</text>
+  <rect x="535" y="180" width="36" height="12" rx="2" fill="rgba(0,230,118,0.15)"/>
+  <text x="553" y="190" text-anchor="middle" font-family="monospace" font-size="7" fill="#00e676">ACTIVE</text>
+
+  <rect x="320" y="203" width="260" height="24" rx="2" fill="#0e0f12"/>
+  <text x="330" y="219" font-family="monospace" font-size="9" fill="#ff1744">P1</text>
+  <text x="350" y="219" font-family="monospace" font-size="9" fill="#c8cad0">dc-a3b4: Design UI layout</text>
+  <rect x="535" y="208" width="36" height="12" rx="2" fill="rgba(0,230,118,0.15)"/>
+  <text x="553" y="218" text-anchor="middle" font-family="monospace" font-size="7" fill="#00e676">ACTIVE</text>
+
+  <rect x="320" y="231" width="260" height="24" rx="2" fill="#0e0f12"/>
+  <text x="330" y="247" font-family="monospace" font-size="9" fill="#ffd740">P2</text>
+  <text x="350" y="247" font-family="monospace" font-size="9" fill="#6b6e7a">dc-c5d6: Wire endpoints</text>
+  <rect x="527" y="236" width="46" height="12" rx="2" fill="rgba(255,215,64,0.15)"/>
+  <text x="550" y="246" text-anchor="middle" font-family="monospace" font-size="7" fill="#ffd740">BLOCKED</text>
+
+  <rect x="320" y="259" width="260" height="24" rx="2" fill="#0e0f12"/>
+  <text x="330" y="275" font-family="monospace" font-size="9" fill="#ffd740">P2</text>
+  <text x="350" y="275" font-family="monospace" font-size="9" fill="#6b6e7a">dc-g9h0: Deploy to prod</text>
+  <rect x="540" y="264" width="30" height="12" rx="2" fill="rgba(107,110,122,0.1)"/>
+  <text x="555" y="274" text-anchor="middle" font-family="monospace" font-size="7" fill="#6b6e7a">OPEN</text>
+
+  <rect x="320" y="287" width="260" height="24" rx="2" fill="#0e0f12"/>
+  <text x="330" y="303" font-family="monospace" font-size="9" fill="#00e676">P3</text>
+  <text x="350" y="303" font-family="monospace" font-size="9" fill="#6b6e7a">dc-e7f8: Schema design</text>
+  <rect x="527" y="292" width="46" height="12" rx="2" fill="rgba(0,230,118,0.1)"/>
+  <text x="550" y="302" text-anchor="middle" font-family="monospace" font-size="7" fill="#69f0ae">SEALED</text>
+
+  <!-- Right column: Chronicle -->
+  <rect x="605" y="142" width="280" height="180" rx="6" fill="#131418" stroke="#2a2c36" stroke-width="1"/>
+  <text x="620" y="162" font-family="monospace" font-size="11" fill="#c8cad0" font-weight="bold" letter-spacing="2">CHRONICLE</text>
+
+  <text x="620" y="183" font-family="monospace" font-size="8" fill="#6b6e7a">14:23:07</text>
+  <text x="685" y="183" font-family="monospace" font-size="8" fill="#00e676">DOOM-BOT-XII spawned for dc-f7a2</text>
+  <text x="620" y="198" font-family="monospace" font-size="8" fill="#6b6e7a">14:22:55</text>
+  <text x="685" y="198" font-family="monospace" font-size="8" fill="#69f0ae">dc-e7f8 verified and sealed</text>
+  <text x="620" y="213" font-family="monospace" font-size="8" fill="#6b6e7a">14:22:41</text>
+  <text x="685" y="213" font-family="monospace" font-size="8" fill="#ffd740">DOOM-BOT-XI fulfilled dc-e7f8</text>
+  <text x="620" y="228" font-family="monospace" font-size="8" fill="#6b6e7a">14:20:12</text>
+  <text x="685" y="228" font-family="monospace" font-size="8" fill="#c8cad0">DOOM-BOT-XI building schema...</text>
+  <text x="620" y="243" font-family="monospace" font-size="8" fill="#6b6e7a">14:19:30</text>
+  <text x="685" y="243" font-family="monospace" font-size="8" fill="#00e676">DOOM-BOT-XI spawned for dc-e7f8</text>
+  <text x="620" y="258" font-family="monospace" font-size="8" fill="#6b6e7a">14:19:05</text>
+  <text x="685" y="258" font-family="monospace" font-size="8" fill="#ffd740">Forge decomposed: 4 sub-decrees</text>
+  <text x="620" y="273" font-family="monospace" font-size="8" fill="#6b6e7a">14:18:42</text>
+  <text x="685" y="273" font-family="monospace" font-size="8" fill="#c8cad0">Session 117 opened</text>
+  <text x="620" y="288" font-family="monospace" font-size="8" fill="#6b6e7a">14:18:40</text>
+  <text x="685" y="288" font-family="monospace" font-size="8" fill="#00e676">DOOM AWAKENS</text>
+
+  <!-- War Council -->
+  <rect x="15" y="335" width="870" height="200" rx="6" fill="#131418" stroke="#00e676" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="30" y="355" font-family="monospace" font-size="11" fill="#00e676" font-weight="bold" letter-spacing="2">WAR COUNCIL</text>
+
+  <!-- Chat messages -->
+  <rect x="25" y="370" width="500" height="36" rx="4" fill="#0e0f12"/>
+  <text x="35" y="385" font-family="monospace" font-size="9" fill="#6b6e7a">YOU</text>
+  <text x="35" y="399" font-family="monospace" font-size="10" fill="#c8cad0">Build a real-time data pipeline with automated alerts</text>
+
+  <rect x="25" y="414" width="700" height="50" rx="4" fill="rgba(0,230,118,0.05)" stroke="rgba(0,230,118,0.15)" stroke-width="1"/>
+  <text x="35" y="429" font-family="monospace" font-size="9" fill="#00e676">DOOM</text>
+  <text x="35" y="443" font-family="monospace" font-size="10" fill="#69f0ae">The Forge has decomposed this into 4 sub-decrees. DOOM-BOT-XI is</text>
+  <text x="35" y="457" font-family="monospace" font-size="10" fill="#69f0ae">building the schema now. Remaining bots will spawn on completion.</text>
+
+  <!-- Input -->
+  <rect x="25" y="475" width="780" height="35" rx="4" fill="#0e0f12" stroke="#2a2c36" stroke-width="1"/>
+  <text x="40" y="497" font-family="monospace" font-size="11" fill="#6b6e7a">Issue your decree...</text>
+  <rect x="815" y="478" width="60" height="28" rx="4" fill="#00e676"/>
+  <text x="845" y="497" text-anchor="middle" font-family="monospace" font-size="10" fill="#0a0a0c" font-weight="bold">DECREE</text>
+
+  <!-- Bottom nav -->
+  <rect x="0" y="520" width="900" height="30" fill="#0e0f12"/>
+  <line x1="0" y1="520" x2="900" y2="520" stroke="#2a2c36" stroke-width="1"/>
+  <text x="80" y="539" text-anchor="middle" font-family="monospace" font-size="9" fill="#00e676" font-weight="bold">SWARM</text>
+  <text x="200" y="539" text-anchor="middle" font-family="monospace" font-size="9" fill="#6b6e7a">BOTS</text>
+  <text x="320" y="539" text-anchor="middle" font-family="monospace" font-size="9" fill="#6b6e7a">COUNCIL</text>
+  <text x="440" y="539" text-anchor="middle" font-family="monospace" font-size="9" fill="#6b6e7a">DECREES</text>
+  <text x="560" y="539" text-anchor="middle" font-family="monospace" font-size="9" fill="#6b6e7a">MEMORY</text>
+  <text x="680" y="539" text-anchor="middle" font-family="monospace" font-size="9" fill="#6b6e7a">STATS</text>
+  <text x="810" y="539" text-anchor="middle" font-family="monospace" font-size="9" fill="#6b6e7a">PROJ</text>
+
+  <!-- Scanline overlay -->
+  <defs>
+    <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="2" fill="transparent"/>
+      <rect y="2" width="4" height="2" fill="rgba(0,0,0,0.04)"/>
+    </pattern>
+  </defs>
+  <rect width="900" height="550" fill="url(#scanlines)" rx="10"/>
+</svg>
