@@ -149,6 +149,26 @@ DOOM runs 6 background daemons, managed by `start.sh`:
 
 The watchdog in `start.sh` auto-respawns the server on crash with exponential backoff.
 
+## Swarm Execution
+
+DOOM doesn't run one bot at a time. It swarms.
+
+The **worker** picks up open decrees and spawns up to 3 Doom Bots in parallel. Each bot is an isolated Claude Code session with its own context, its own decree, and no ability to modify core framework files. When a bot finishes, the worker verifies its output (syntax checks, import tests, endpoint validation). If verification fails, it spawns a fix pass — up to 3 attempts before marking the decree blocked.
+
+```
+Worker loop:
+  1. Scan for open, unblocked decrees
+  2. Spawn Doom Bot with decree + relevant archives injected
+  3. Bot executes autonomously (no human input)
+  4. Worker verifies output: syntax, imports, runtime checks
+  5. Pass → fulfilled. Fail → fix pass or blocked.
+  6. Dependent decrees auto-unblock and enter the queue
+```
+
+Bots are expendable. They don't share context. They don't talk to each other. They execute their decree and get retired. The work persists in the codebase and archives — the bot doesn't matter.
+
+The **Siege Engine** takes this further: give it a high-level objective and a project directory, and it runs an autonomous iteration loop — decompose, build, verify, fix, repeat — until the objective is met or it hits the iteration cap.
+
 ## The Forge
 
 Tell DOOM what you want to build. The Forge decomposes it into sub-decrees with dependency chains:
@@ -164,7 +184,9 @@ The Forge:
   dc-i9j0: Wire real-time alerts           [P2, blocked_by: dc-c3d4]
 ```
 
-Doom Bots execute the unblocked decrees first, then cascade through dependencies.
+Doom Bots execute the unblocked decrees first, then cascade through dependencies. The Forge uses Claude Sonnet for fast decomposition — cheaper and faster than Opus for planning work.
+
+**Project Factory** — say `[BUILD: project-name | description]` in the War Council and DOOM will create the project directory, register it, and forge the sub-decrees to build it end-to-end.
 
 ## Project Protocol
 
@@ -178,6 +200,31 @@ Every project DOOM builds follows a standard:
 6. **Mobile-first UI** — works on iPhone, 44px tap targets, responsive
 7. **DOOM theme** — `#00e676` green / `#0a0a0c` dark / scanlines
 8. **Registered in DOOM** — trackable from the War Room
+
+## Voice
+
+DOOM speaks. The server integrates ElevenLabs text-to-speech for real-time voice announcements in the War Room:
+
+- Bot spawned, decree fulfilled, failure detected — DOOM announces it
+- War Council responses can be spoken aloud
+- Startup voice lines play from a pre-generated cache (no API call on page load)
+
+Voice is controlled by a kill switch (`ELEVENLABS_DISABLED` in `server.py`). When credits run out, DOOM goes silent — no fallback, no wasted API calls. The system auto-disables on 401/403/429 responses mid-session so a single expired key doesn't burn through retries.
+
+Set your ElevenLabs API key in `.env` and flip the switch when credits are available.
+
+## Tailscale
+
+DOOM binds to `0.0.0.0` on every port. If you're running Tailscale, the War Room is accessible from any device on your tailnet:
+
+```
+Desktop:  http://<tailscale-ip>:5050/desktop
+Mobile:   http://<tailscale-ip>:5050/mobile
+```
+
+The mobile UI is built for iPhone — safe area insets for Dynamic Island, touch-friendly tap targets, stacking layouts. All project URLs use the requesting host's IP (never hardcoded `localhost`), so links work whether you're on the local machine or on your phone over Tailscale.
+
+Sub-projects follow the same pattern. Each gets its own port, all bound to `0.0.0.0`, all accessible over the tailnet.
 
 ## Principles
 
